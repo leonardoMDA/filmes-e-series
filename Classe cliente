@@ -1,0 +1,21 @@
+class Cliente:
+    def __init__(self, nome, idade, sexo, email, telefone, endereco):
+        self.nome = nome.title()  # Deixa a letra do nome maiúscula
+        self.idade = idade
+        self.sexo = sexo
+        self.email = email
+        self.telefone = telefone
+        self.endereco = endereco
+
+    def apresentar_cadastro(self):
+        print(f"Cadastro efetuado com sucesso!\n"
+              f"Nome: {self.nome}\n"
+              f"Idade: {self.idade}\n"
+              f"Sexo: {self.sexo}\n"
+              f"Email: {self.email}\n"
+              f"Telefone: {self.telefone}\n"
+              f"Endereço: {self.endereco}")
+
+# Exemplo de uso:
+cliente = Cliente(nome="joão da silva", idade=30, sexo="Masculino", email="joao@example.com", telefone="123456789", endereco="Rua A, 123")
+cliente.apresentar_cadastro()
